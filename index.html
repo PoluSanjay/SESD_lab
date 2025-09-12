@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype Pattern Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚡ Prototype Pattern in Action</h1>
+    <p>Pick a category → Clone an object → See how it creates unique variations instantly.</p>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-target="food-page">🍕 Food Delivery</button>
+    <button class="tab-btn" data-target="banking-page">🏦 Banking</button>
+    <button class="tab-btn" data-target="ecommerce-page">🛒 E-commerce</button>
+    <button class="tab-btn" data-target="ride-page">🚖 Ride-Hailing</button>
+  </nav>
+
+  <main>
+    <!-- Food Delivery -->
+    <div id="food-page" class="page active">
+      <div class="card" data-type="food">
+        <img src="https://t3.ftcdn.net/jpg/02/79/75/74/360_F_279757414_o2KNnB8fZ2eahIK6SqydL4tGFkO5RDH5.jpg" alt="Food Delivery">
+        <h3>Your Last Pizza Order</h3>
+        <div class="card-content">
+          <p>Details: Large Pepperoni, extra cheese. Delivered to Main St.</p>
+          <button class="clone-btn">🍕 Reorder (Clone)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banking -->
+    <div id="banking-page" class="page">
+      <div class="card" data-type="banking">
+        <img src="https://www.addevice.io/storage/ckeditor/uploads/images/637ba22ed92a7_how.to.create.a.banking.app.step.by.step.guide.1920.1080.1.png" alt="Banking">
+        <h3>Aggressive Growth Plan</h3>
+        <div class="card-content">
+          <p>Details: High-risk, high-reward portfolio template for new investments.</p>
+          <button class="clone-btn">💰 Create New Plan (Clone)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- E-commerce -->
+    <div id="ecommerce-page" class="page">
+      <div class="card" data-type="ecommerce">
+        <img src="https://thumbs.dreamstime.com/b/e-commerce-online-shopping-business-technology-concept-screen-e-commerce-online-shopping-business-technology-concept-screen-207950081.jpg" alt="E-commerce Product">
+        <h3>Classic White T-Shirt</h3>
+        <div class="card-content">
+          <p>Details: Size L, Color White. Pure cotton fabric.</p>
+          <button class="clone-btn">🛒 Clone Product Template</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ride-Hailing -->
+    <div id="ride-page" class="page">
+      <div class="card" data-type="ride">
+        <img src="https://etimg.etb2bimg.com/photo/117486171.cms" alt="Ride Hailing">
+        <h3>Home to Work Commute</h3>
+        <div class="card-content">
+          <p>Details: Pickup from Home, Dropoff at Office. Standard vehicle, pay via Card.</p>
+          <button class="clone-btn">🚖 Book Similar Ride (Clone)</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
